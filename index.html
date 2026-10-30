@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examen — Marketing digital & Social Media Management</title>
+<style>
+:root{--ink:#202536;--muted:#687084;--line:#dfe3eb;--paper:#fff;--bg:#f3f5f9;--accent:#6546c7;--accent2:#f0ecff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif}
+header{background:#211b39;color:#fff;padding:34px 20px}
+.hero{max-width:1000px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;color:#c7baff;font-weight:700}
+h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.12;margin:9px 0}
+header p{color:#e4defa;max-width:720px;margin-bottom:0}
+main{max-width:1000px;margin:28px auto;padding:0 16px 60px}
+.panel,.question,.case{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;margin:16px 0;box-shadow:0 4px 18px rgba(26,25,50,.035)}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+label.field{display:block;font-weight:700;font-size:.9rem}
+input[type=text],textarea{width:100%;border:1px solid #cbd1de;border-radius:8px;padding:11px;font:inherit;margin-top:6px;background:#fff}
+textarea{min-height:100px;resize:vertical}
+h2{font-size:1.45rem;margin:32px 0 8px}
+h3{margin:0 0 9px;font-size:1.08rem}
+.sub{color:var(--muted);margin-top:0}
+.tag{display:inline-block;background:var(--accent2);color:#5134ae;border-radius:30px;padding:4px 10px;font-size:.78rem;font-weight:700;margin-bottom:8px}
+.question{padding:18px 20px}
+.question p{font-weight:700;margin:2px 0 12px}
+.option{display:flex;gap:10px;align-items:flex-start;padding:7px 9px;border-radius:7px;cursor:pointer}
+.option:hover{background:#f7f5ff}
+.option input{margin-top:5px;accent-color:var(--accent)}
+.case-data{overflow-x:auto;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+th{background:#f4f1ff}
+.callout{background:#f7f6fb;border-left:4px solid var(--accent);padding:12px 15px;border-radius:6px;margin:12px 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+button{border:0;border-radius:9px;padding:12px 18px;font-weight:700;font-size:1rem;cursor:pointer}
+.primary{background:var(--accent);color:white}
+.secondary{background:#e8eaf0;color:var(--ink)}
+#score{display:none;background:#fff;border:2px solid var(--accent);padding:18px;border-radius:12px;margin-top:18px}
+.small{font-size:.88rem;color:var(--muted)}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:24px}
+@media(max-width:650px){.meta{grid-template-columns:1fr}.panel,.question,.case{padding:16px}}
+@media print{body{background:#fff}.panel,.question,.case{box-shadow:none;break-inside:avoid}header{background:#fff;color:#000;padding:10px 0}header p,.eyebrow{color:#333}.actions{display:none}main{max-width:none;margin:0;padding:0 8px}}
+</style>
+</head>
+<body>
+<header><div class="hero">
+<div class="eyebrow">Évaluation des compétences</div>
+<h1>Marketing digital<br>Social Media Management</h1>
+<p>Examen composé de QCM et de cinq études de cas pratiques consacrées à la lecture des KPIs, à l'analyse des performances et à la prise de décision.</p>
+</div></header>
+<main>
+<section class="panel">
+<h2 style="margin-top:0">Informations du candidat</h2>
+<div class="meta">
+<label class="field">Nom et prénom<input type="text" placeholder="Votre nom"></label>
+<label class="field">Date<input type="text" placeholder="JJ / MM / AAAA"></label>
+<label class="field">Durée conseillée<input type="text" value="1 h 45" readonly></label>
+</div>
+<p class="small">Barème indicatif : QCM = 30 points (15 questions × 2 points) ; études de cas = 70 points (14 points par cas). Total = 100 points. Les réponses aux études de cas sont à rédiger dans les espaces prévus.</p>
+<div class="callout"><strong>Consignes</strong><br>Pour chaque QCM, cochez une seule réponse. Pour les études de cas, détaillez vos calculs, interprétez les résultats et proposez des actions concrètes. Les données des cas sont fictives et servent uniquement à l'exercice.</div>
+</section>
+
+<h2>Partie 1 — QCM</h2>
+<p class="sub">15 questions · Une seule bonne réponse par question.</p>
+<div id="quiz">
+<div class="question" data-answer="b"><span class="tag">Question 1 · 2 pts</span><p>Quel est le rôle principal d'un Social Media Manager selon le cours ?</p>
+<label class="option"><input type="radio" name="q1" value="a"> Produire uniquement des visuels et des vidéos.</label>
+<label class="option"><input type="radio" name="q1" value="b"> Gérer la présence et l'engagement d'une marque sur les réseaux sociaux.</label>
+<label class="option"><input type="radio" name="q1" value="c"> Gérer exclusivement les campagnes Google Ads.</label>
+<label class="option"><input type="radio" name="q1" value="d"> Développer et maintenir le site web de l'entreprise.</label></div>
+
+<div class="question" data-answer="c"><span class="tag">Question 2 · 2 pts</span><p>Parmi ces tâches, laquelle fait partie du travail du Social Media Manager ?</p>
+<label class="option"><input type="radio" name="q2" value="a"> Réaliser les audits techniques du serveur.</label>
+<label class="option"><input type="radio" name="q2" value="b"> Définir la politique de recrutement.</label>
+<label class="option"><input type="radio" name="q2" value="c"> Créer un calendrier éditorial, animer la communauté et suivre les KPIs.</label>
+<label class="option"><input type="radio" name="q2" value="d"> Concevoir la comptabilité de l'entreprise.</label></div>
+
+<div class="question" data-answer="a"><span class="tag">Question 3 · 2 pts</span><p>Quelle combinaison d'outils est associée au Social Media Manager dans le support de cours ?</p>
+<label class="option"><input type="radio" name="q3" value="a"> Meta Business Suite, Canva, Buffer / Hootsuite.</label>
+<label class="option"><input type="radio" name="q3" value="b"> Google Search Console, Ahrefs, Google Ads.</label>
+<label class="option"><input type="radio" name="q3" value="c"> Power BI, CRM, Google Ads.</label>
+<label class="option"><input type="radio" name="q3" value="d"> Photoshop, serveur FTP, outil de paie.</label></div>
+
+<div class="question" data-answer="d"><span class="tag">Question 4 · 2 pts</span><p>Quelle proposition correspond à la famille de KPIs « visibilité » ?</p>
+<label class="option"><input type="radio" name="q4" value="a"> Commentaires, partages et enregistrements.</label>
+<label class="option"><input type="radio" name="q4" value="b"> Clics, leads et ventes.</label>
+<label class="option"><input type="radio" name="q4" value="c"> Nouveaux abonnés et désabonnements.</label>
+<label class="option"><input type="radio" name="q4" value="d"> Portée, impressions et vues.</label></div>
+
+<div class="question" data-answer="b"><span class="tag">Question 5 · 2 pts</span><p>Les likes, commentaires, partages et enregistrements appartiennent à quelle famille ?</p>
+<label class="option"><input type="radio" name="q5" value="a"> Visibilité.</label>
+<label class="option"><input type="radio" name="q5" value="b"> Engagement.</label>
+<label class="option"><input type="radio" name="q5" value="c"> Trafic.</label>
+<label class="option"><input type="radio" name="q5" value="d"> Croissance.</label></div>
+
+<div class="question" data-answer="c"><span class="tag">Question 6 · 2 pts</span><p>Quelle formule permet de calculer le taux d'engagement présenté dans le support ?</p>
+<label class="option"><input type="radio" name="q6" value="a"> Portée ÷ interactions × 100.</label>
+<label class="option"><input type="radio" name="q6" value="b"> Clics ÷ impressions × 100.</label>
+<label class="option"><input type="radio" name="q6" value="c"> Interactions ÷ portée × 100.</label>
+<label class="option"><input type="radio" name="q6" value="d"> Impressions ÷ clics × 100.</label></div>
+
+<div class="question" data-answer="a"><span class="tag">Question 7 · 2 pts</span><p>Comment calcule-t-on le CTR dans le support ?</p>
+<label class="option"><input type="radio" name="q7" value="a"> Clics ÷ impressions × 100.</label>
+<label class="option"><input type="radio" name="q7" value="b"> Interactions ÷ abonnés × 100.</label>
+<label class="option"><input type="radio" name="q7" value="c"> Impressions ÷ portée.</label>
+<label class="option"><input type="radio" name="q7" value="d"> Nouveaux abonnés ÷ clics × 100.</label></div>
+
+<div class="question" data-answer="d"><span class="tag">Question 8 · 2 pts</span><p>La fréquence correspond à :</p>
+<label class="option"><input type="radio" name="q8" value="a"> Portée ÷ impressions.</label>
+<label class="option"><input type="radio" name="q8" value="b"> Interactions ÷ portée × 100.</label>
+<label class="option"><input type="radio" name="q8" value="c"> Clics ÷ impressions × 100.</label>
+<label class="option"><input type="radio" name="q8" value="d"> Impressions ÷ portée.</label></div>
+
+<div class="question" data-answer="b"><span class="tag">Question 9 · 2 pts</span><p>Quelle est la bonne méthode pour lire un KPI en trois temps ?</p>
+<label class="option"><input type="radio" name="q9" value="a"> Publier, sponsoriser, supprimer.</label>
+<label class="option"><input type="radio" name="q9" value="b"> Situer, expliquer, décider.</label>
+<label class="option"><input type="radio" name="q9" value="c"> Créer, vendre, fidéliser.</label>
+<label class="option"><input type="radio" name="q9" value="d"> Mesurer, ignorer, recommencer.</label></div>
+
+<div class="question" data-answer="c"><span class="tag">Question 10 · 2 pts</span><p>Dans Meta Business Suite, quelle fonctionnalité permet de centraliser les messages et commentaires Facebook et Instagram ?</p>
+<label class="option"><input type="radio" name="q10" value="a"> Le calendrier éditorial.</label>
+<label class="option"><input type="radio" name="q10" value="b"> Les statistiques.</label>
+<label class="option"><input type="radio" name="q10" value="c"> La boîte de réception.</label>
+<label class="option"><input type="radio" name="q10" value="d"> Le benchmark.</label></div>
+
+<div class="question" data-answer="a"><span class="tag">Question 11 · 2 pts</span><p>Quel est le rôle de Notion dans l'organisation éditoriale décrite dans le cours ?</p>
+<label class="option"><input type="radio" name="q11" value="a"> Organiser la base éditoriale, les statuts et les vues du calendrier.</label>
+<label class="option"><input type="radio" name="q11" value="b"> Publier automatiquement sur tous les réseaux sociaux.</label>
+<label class="option"><input type="radio" name="q11" value="c"> Remplacer les statistiques natives des plateformes.</label>
+<label class="option"><input type="radio" name="q11" value="d"> Gérer uniquement les campagnes sponsorisées.</label></div>
+
+<div class="question" data-answer="d"><span class="tag">Question 12 · 2 pts</span><p>Quelle méthode est recommandée pour réaliser un benchmark manuel ?</p>
+<label class="option"><input type="radio" name="q12" value="a"> Comparer un compte local à une marque internationale sans tenir compte du secteur.</label>
+<label class="option"><input type="radio" name="q12" value="b"> Relever uniquement le nombre total d'abonnés.</label>
+<label class="option"><input type="radio" name="q12" value="c"> Comparer des périodes différentes pour chaque concurrent.</label>
+<label class="option"><input type="radio" name="q12" value="d"> Choisir 5 comptes comparables, relever les mêmes KPIs sur 30 jours, puis comparer fréquence, formats et sujets.</label></div>
+
+<div class="question" data-answer="b"><span class="tag">Question 13 · 2 pts</span><p>Dans le framework AIDA, que représente la lettre D ?</p>
+<label class="option"><input type="radio" name="q13" value="a"> Data.</label>
+<label class="option"><input type="radio" name="q13" value="b"> Désir.</label>
+<label class="option"><input type="radio" name="q13" value="c"> Découverte.</label>
+<label class="option"><input type="radio" name="q13" value="d"> Distribution.</label></div>
+
+<div class="question" data-answer="c"><span class="tag">Question 14 · 2 pts</span><p>Quel framework suit les étapes Before, After, Bridge ?</p>
+<label class="option"><input type="radio" name="q14" value="a"> STAR.</label>
+<label class="option"><input type="radio" name="q14" value="b"> AIDA.</label>
+<label class="option"><input type="radio" name="q14" value="c"> BAB.</label>
+<label class="option"><input type="radio" name="q14" value="d"> FEAR.</label></div>
+
+<div class="question" data-answer="a"><span class="tag">Question 15 · 2 pts</span><p>Quelle pratique respecte l'éthique du copywriting présentée dans le support ?</p>
+<label class="option"><input type="radio" name="q15" value="a"> Utiliser une urgence réelle et vérifiable.</label>
+<label class="option"><input type="radio" name="q15" value="b"> Inventer de faux témoignages pour rassurer.</label>
+<label class="option"><input type="radio" name="q15" value="c"> Créer une fausse rareté pour accélérer l'achat.</label>
+<label class="option"><input type="radio" name="q15" value="d"> Utiliser des statistiques non vérifiées.</label></div>
+</div>
+
+<h2>Partie 2 — Études de cas : analyse des KPIs</h2>
+<p class="sub">5 études de cas · 14 points chacune. Les données sont fictives. Montrez les formules et expliquez vos conclusions.</p>
+
+<section class="case">
+<span class="tag">Cas 1 · Visibilité et fréquence · 14 pts</span>
+<h3>Une boutique de vêtements veut augmenter sa visibilité sur Facebook</h3>
+<p>Sur une période de 28 jours, la page publie 12 contenus. Le rapport indique les résultats suivants :</p>
+<div class="case-data"><table><tr><th>Indicateur</th><th>Période actuelle</th><th>Période précédente</th></tr>
+<tr><td>Portée</td><td>18 000</td><td>15 000</td></tr><tr><td>Impressions</td><td>45 000</td><td>30 000</td></tr><tr><td>Vues vidéo</td><td>8 000</td><td>5 500</td></tr></table></div>
+<p><strong>Questions :</strong></p>
+<ol><li>Calculez la fréquence pour les deux périodes.</li><li>Calculez l'évolution en pourcentage de la portée.</li><li>Interprétez les résultats : la visibilité progresse-t-elle ? Que vous indique la fréquence ?</li><li>Proposez deux actions à tester le mois suivant.</li></ol>
+<textarea placeholder="Votre analyse et vos calculs..."></textarea>
+</section>
+
+<section class="case">
+<span class="tag">Cas 2 · Engagement · 14 pts</span>
+<h3>Un centre de formation constate que ses publications sont vues mais peu commentées</h3>
+<p>Deux publications ont été comparées. Les deux ont été publiées sur la même plateforme et pendant une période comparable.</p>
+<div class="case-data"><table><tr><th>Indicateur</th><th>Publication A</th><th>Publication B</th></tr>
+<tr><td>Portée</td><td>10 000</td><td>7 500</td></tr><tr><td>J'aime</td><td>240</td><td>210</td></tr><tr><td>Commentaires</td><td>20</td><td>45</td></tr><tr><td>Partages</td><td>30</td><td>60</td></tr><tr><td>Enregistrements</td><td>10</td><td>35</td></tr></table></div>
+<div class="callout">Pour cet exercice, les interactions regroupent les j'aime, commentaires, partages et enregistrements.</div>
+<p><strong>Questions :</strong></p>
+<ol><li>Calculez le nombre total d'interactions de chaque publication.</li><li>Calculez le taux d'engagement par rapport à la portée pour A et B.</li><li>Quelle publication est la plus performante en engagement ? Expliquez pourquoi le nombre de j'aime seul ne suffit pas.</li><li>Quelle hypothèse pouvez-vous formuler sur le contenu B et quel test proposeriez-vous ?</li></ol>
+<textarea placeholder="Votre analyse et vos calculs..."></textarea>
+</section>
+
+<section class="case">
+<span class="tag">Cas 3 · Trafic et CTR · 14 pts</span>
+<h3>Une marque publie une offre et souhaite générer des visites vers son site</h3>
+<p>La marque compare deux publications comportant un lien vers une page de présentation de ses services.</p>
+<div class="case-data"><table><tr><th>Indicateur</th><th>Publication A</th><th>Publication B</th></tr>
+<tr><td>Impressions</td><td>20 000</td><td>12 000</td></tr><tr><td>Clics sur le lien</td><td>300</td><td>360</td><tr><td>Leads obtenus</td><td>15</td><td>30</td></tr></table></div>
+<p><strong>Questions :</strong></p>
+<ol><li>Calculez le CTR de chaque publication.</li><li>Calculez le nombre de leads par clic pour chaque publication, en pourcentage.</li><li>Quelle publication génère le meilleur CTR ? Laquelle génère le plus de leads ?</li><li>Formulez une recommandation : quel élément faudrait-il analyser ou reproduire pour améliorer les résultats ?</li></ol>
+<textarea placeholder="Votre analyse et vos calculs..."></textarea>
+</section>
+
+<section class="case">
+<span class="tag">Cas 4 · Croissance de communauté · 14 pts</span>
+<h3>Une page Instagram veut développer sa communauté sans perdre ses abonnés existants</h3>
+<p>Sur les 30 derniers jours, la page a enregistré les mouvements suivants :</p>
+<div class="case-data"><table><tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Abonnés au début de période</td><td>4 000</td></tr><tr><td>Nouveaux abonnés</td><td>280</td></tr><tr><td>Désabonnements</td><td>100</td></tr><tr><td>Abonnés à la fin de période</td><td>4 180</td></tr></table></div>
+<p><strong>Questions :</strong></p>
+<ol><li>Calculez le taux de croissance selon la formule du support (nouveaux abonnés ÷ abonnés au départ × 100).</li><li>Calculez le solde net d'abonnés sur la période.</li><li>Expliquez pourquoi il est utile de suivre à la fois les nouveaux abonnés et les désabonnements.</li><li>Proposez deux actions pour développer la communauté et surveiller la qualité de cette croissance.</li></ol>
+<textarea placeholder="Votre analyse et vos calculs..."></textarea>
+</section>
+
+<section class="case">
+<span class="tag">Cas 5 · Pilotage mensuel et décision · 14 pts</span>
+<h3>Une petite entreprise doit décider quels contenus conserver dans son calendrier éditorial</h3>
+<p>À la fin du mois, le Social Media Manager rassemble les résultats de trois formats publiés sur Facebook et Instagram.</p>
+<div class="case-data"><table><tr><th>Format</th><th>Portée</th><th>Interactions</th><th>Clics</th><th>Publications</th></tr>
+<tr><td>Carrousel conseils</td><td>9 000</td><td>540</td><td>180</td><td>4</td></tr>
+<tr><td>Vidéo courte</td><td>15 000</td><td>450</td><td>90</td><td>4</td></tr>
+<tr><td>Visuel promotionnel</td><td>6 000</td><td>180</td><td>150</td><td>4</td></tr></table></div>
+<div class="callout">Pour ce cas, calculez le taux d'engagement = interactions ÷ portée × 100. Le CTR ne peut pas être calculé sans le nombre d'impressions ; ne le déduisez pas des données fournies.</div>
+<p><strong>Questions :</strong></p>
+<ol><li>Calculez le taux d'engagement de chaque format.</li><li>Identifiez le format qui obtient la portée la plus élevée et celui qui obtient le meilleur taux d'engagement.</li><li>Quel format semble le plus intéressant pour générer des clics au regard de sa portée ? Justifiez avec les données disponibles, sans appeler cela un CTR.</li><li>Proposez une décision pour le calendrier éditorial du mois suivant : garder, améliorer ou arrêter chaque format. Expliquez votre choix.</li><li>Citez les éléments qui devraient apparaître dans un rapport mensuel d'une page.</li></ol>
+<textarea placeholder="Votre analyse, vos calculs et votre plan d'action..."></textarea>
+</section>
+
+<section class="panel">
+<h2 style="margin-top:0">Question de synthèse</h2>
+<p>Vous prenez en charge les réseaux sociaux d'une petite entreprise. Décrivez brièvement comment vous organiseriez un cycle mensuel de travail, depuis la planification jusqu'à l'ajustement de la stratégie. Mentionnez les outils et les données que vous utiliseriez.</p>
+<textarea placeholder="Votre réponse..."></textarea>
+</section>
+
+<div class="actions">
+<button class="primary" onclick="calculateScore()">Corriger les QCM</button>
+<button class="secondary" onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+<button class="secondary" onclick="resetQuiz()">Réinitialiser les QCM</button>
+</div>
+<div id="score" aria-live="polite"></div>
+<footer>Examen construit à partir des supports de formation fournis : Marketing digital, Copywriting & Neuromarketing, et KPIs réseaux sociaux.</footer>
+</main>
+<script>
+function calculateScore(){
+ const questions=[...document.querySelectorAll('#quiz .question')];
+ let correct=0,answered=0;
+ questions.forEach(q=>{
+   const selected=q.querySelector('input:checked');
+   q.style.borderColor='#dfe3eb';
+   if(selected){answered++;if(selected.value===q.dataset.answer){correct++;q.style.borderColor='#2c9b67'}else{q.style.borderColor='#d65b5b'}}
+ });
+ const box=document.getElementById('score');
+ box.style.display='block';
+ box.innerHTML='<strong>Résultat QCM : '+(correct*2)+'/30 points</strong><br>'+correct+' bonne(s) réponse(s) sur '+questions.length+'. '+(answered<questions.length?'Questions sans réponse : '+(questions.length-answered)+'. ':'')+'Les études de cas et la question de synthèse doivent être évaluées séparément.';
+ box.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetQuiz(){
+ document.querySelectorAll('#quiz input[type=radio]').forEach(i=>i.checked=false);
+ document.querySelectorAll('#quiz .question').forEach(q=>q.style.borderColor='#dfe3eb');
+ document.getElementById('score').style.display='none';
+}
+</script>
+</body>
+</html>
